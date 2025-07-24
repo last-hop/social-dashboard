@@ -49,15 +49,13 @@ Throughout this project, multiple AI tools were used to streamline development:
 ```bash
 git clone https://github.com/your-username/socialapp-expo.git
 cd socialapp-expo
+
 2. Install dependencies
-bash
-Copy
-Edit
+
 npm install
 3. Start Expo development server
-bash
-Copy
-Edit
+
+
 npx expo start
 You can scan the QR code in Expo Go app to view the app on your device.
 
@@ -91,14 +89,17 @@ No signup is required — pick any sample email and enter a valid password forma
 🔐 Screens are protected — if no token exists, navigation is blocked
 
 📁 Folder Structure
-css
-Copy
-Edit
+
 src/
 │
 ├── components/
 │   ├── createPostScreen.tsx
-│   └── editPostScreen.tsx
+│   ├── editPostScreen.tsx
+│   ├── HomeScreen.tsx
+│   ├── SplashScreen.tsx
+│   ├── UserScreen.tsx
+│   ├── CustomButton.tsx
+│   └── PostCard.tsx
 │
 ├── nav/
 │   └── BottomTabNavigator.tsx
@@ -106,6 +107,13 @@ src/
 ├── screens/
 │   ├── splashScreen.tsx
 │   └── LoginScreen.tsx
+│
+├── service/
+│   └── apiService.ts
+│
+├── utils/
+│   └── validation.ts
+
 🪩 Future Enhancements
 🔐 Add signup screen with proper validations
 
